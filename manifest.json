@@ -1,0 +1,19 @@
+{
+	"manifest_version": 2,
+	"name": "ZNO osvita",
+
+	"version": "0",
+	"description": "Automates usage of -comment- feature at zno.osvita.ua",
+
+	"icons": {
+		"48": "icons/icon.png"
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["*://*.zno.osvita.ua/*"],
+			"js": ["main.js"]
+		}
+	]
+
+}
